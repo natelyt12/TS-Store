@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="web icon" href="../asset/logo/logo-no-title-light.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style-with-prefix.css">
+    <style>
+        .srouce {
+            text-align: center;
+            color: #ffffff;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body onload="myFunction()">
+
+    <div class="main-container" onsubmit="sign_in()">
+        <div class="form-container">
+
+            <div class="srouce"><a title="Quay về trang chủ" href="../index.html"><img style="width: 40%;"
+                        src="./z4899108364230_3b99627d74160aa640b072c5209488ce-removebg-preview.png" alt=""></a></div>
+
+            <div class="form-body">
+                <h2 class="title">Đăng nhập với:</h2>
+                <div class="social-login">
+                    <ul>
+                        <li class="google"><a href="#">Google</a></li>
+                        <li class="fb"><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+                <!-- SOCIAL LOGIN -->
+
+                <div class="_or">- Hoặc -</div>
+
+                <form action="" class="the-form">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email của bạn">
+
+                    <label for="password">Mật khẩu</label>
+                    <input type="password" name="password" id="password" placeholder="Nhập mật khẩu">
+
+                    <input type="submit" value="Đăng nhập">
+
+                </form>
+
+            </div><!-- FORM BODY-->
+
+            <div class="form-footer">
+                <div>
+                    <span>Bạn chưa có tài khoản?</span> <a href="./signup.html">Đăng ký</a>
+                </div>
+            </div><!-- FORM FOOTER -->
+
+        </div><!-- FORM CONTAINER -->
+    </div>
+
+    <script src="./sign.js"></script>
+
+    <script>
+
+        setInterval(() => {
+            flashTitle("TS Store", "Đăng nhập")
+        }, 1000);
+
+        function flashTitle(pageTitle, newTitle) {
+            if (document.title == pageTitle) {
+                document.title = newTitle;
+            } else {
+                document.title = pageTitle;
+            }
+        }    
+    </script>
+</body>
+
+</html>

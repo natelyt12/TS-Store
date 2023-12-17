@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#search{
+    width: 300px;
+    
+}
+
+
+/* add page style */
+
+#product-widget {
+  padding: 20px;
+  width: 100;
+}
+
+#product-widget input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+#product-widget .add-product {
+  background-color: #af4c4c;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+#product-widget img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
+/* Menu Effects */
+.navmenu a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  letter-spacing: 0.3px;
+  padding: 0 10px;
+  transition: 0.4s;
+}
+
+.navmenu a:hover {
+  color: #e0e0e0;
+}
+
+.navmenu a::after {
+  position: absolute;
+  content: "";
+  background-color: #e0e0e0;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.navmenu a:hover::after {
+  width: 100%;
+}
+
+/* sản phẩm */
+
+#product-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size:30px;
+  }
+  
+.product-item {
+width: 10%;
+padding: 100px;
+display: flex;
+justify-content: space-around;
+/* flex-direction: column; */
+align-items: center;
+margin-bottom: 10px;
+}
+
+.product-item img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+/* Danh sách sản phẩm */
+.sp-list {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 70px;
+  margin-top: 30px;
+  width: 55%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.sp-list a {
+  font-weight: 700;
+  font-size: 90%;
+  color: rgba(117, 117, 117, 0.747);
+  text-decoration: none;
+  padding: 8px 10px;
+}
+
+#active {
+  color: black;
+  border-bottom: 3px solid black
+}
+
+.name {
+  font-size: 95%;
+  margin: 0;
+}
+
+.price {
+  font-size: 95%;
+  margin: 6px 0px 10px 0;
+}
+
+.btn {
+  font-size: 70%;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 1px solid black;
+  padding: 5px 0;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+#product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 40px;
+  padding: 40px;
+}
+
+.product-card {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  transition: 0.6s;
+}
+.product-card:hover{
+  transform: translateY(-20px);
+}
+
+.image img {
+  width: 100%;
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 30px 0px;
+}
+.image{
+  margin-bottom: 20px;
+}

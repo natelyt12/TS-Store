@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Về TS Store</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="web icon" href="../asset/logo/logo-no-title-light.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <a href="#" id="scroll-to-top">
+        <i class="fa-solid fa-chevron-up" id="scroll-to-top-icon"></i>
+    </a>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 w-100">
+        <div class="container-fluid" style="background-color: #332c54">
+            <a style="width: 60; height: 40;" class="navbar-brand" href="../index.html">
+                <img width="160px" height="60px" src="../asset/logo/logo-light.png">
+            </a>
+
+            <div class="nav-left">
+                <!-- Nav dt -->
+
+                <!-- Navbar toggle -->
+                <button class="navbar-toggler" style="color: #332C54; border: none;" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars" style="color: #fff;"></i></span>
+                </button>
+
+            </div>
+            <!-- Navlinks -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <div class="dropdown btn-group pc">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-mdb-toggle="dropdown" aria-expanded="false" style="
+                      padding-right: 15px;
+                      margin-right: 10px;
+                      border-right: 1px solid rgba(128, 128, 128, 0.424) !important;
+                      border-radius: 0px;
+                      ">
+                            Danh mục sản phẩm
+                        </button>
+                        <ul class="dropdown-menu product-list" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">Điện thoại - Tablet</a></li>
+
+                            <li>
+                                <a href="#" class="dropdown-item">Laptop</a>
+                            </li>
+
+                            <li><a class="dropdown-item" href="#">Bàn phím</a></li>
+                            <li><a class="dropdown-item" href="#">Chuột</a></li>
+                            <li><a class="dropdown-item" href="#">Màn hình</a></li>
+                            <li><a class="dropdown-item" href="#">Tai nghe</a></li>
+                            <li><a class="dropdown-item" href="#">Hàng cũ</a></li>
+                            <li><a class="dropdown-item" href="#">Khuyễn mãi</a></li>
+
+
+                        </ul>
+                    </div>
+
+                    <li class="nav-item">
+                        <span><i class="fa-solid fa-home"></i></span>
+                        <a class="nav-link active" aria-current="page" href="../index.html">Trang chủ</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <span><i class="fa-solid fa-circle-info"></i></span>
+                        <a class="nav-link" href="./page/about.html">Giới thiệu</a>
+                    </li>
+
+                    <li class="nav-item" style="width: 100px;">
+                        <span><i class="fa-solid fa-briefcase"></i></span>
+                        <a class="nav-link" href="#">Tin tức</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <a class="nav-link" href="#">Liên hệ</a>
+                    </li>
+
+                    <li class="nav-item mobile w-50">
+                        <span><i class="fa-solid fa-circle-user"></i></span>
+                        <a id="user-name_mobile" class="nav-link" href="../hàng vip login page/index.html">Đăng nhập</a>
+                        <span id="logout_mobile"></span>
+                    </li>
+
+
+                </ul>
+
+                <div class="nav-right">
+
+                    <!-- Giỏ hàng -->
+
+                    <div class="dropdown d-flex align-content-center">
+
+                        <button class="btn btn-secondary" id="cart" type="button" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside" aria-expanded="false">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Giỏ hàng
+                        </button>
+                        <div class="dropdown-menu" id="cart-menu">
+                            <div class="cart-item">
+
+                                <!-- Cart item ở đây -->
+                                <div class="cart-row row">
+                                    <div class="col-3">
+                                        <img width="100%" src="/asset/database/products/38371_dell_u2520d_1_1.jpg">
+                                    </div>
+                                    <div class="col-9">
+                                        <ul class="pd-info">
+                                            <li>Tên sản phẩm</li>
+                                            <li>Hãng: </li>
+                                            <li>Giá:</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Cart item ở đây -->
+
+                            </div>
+                            <div style="height: 50px;"
+                                class="cart-footer d-flex align-items-center justify-content-around">
+                                <h6 class="m-0">Giỏ hàng của bạn</h6>
+                                <button class="buy-btn text-uppercase text-white w-50">Thanh toán</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <a href="../hàng vip login page/index.html" style="color: #332C54"
+                        class="btn btn-secondary border-0 bg-transparent pc pt-0 pb-0">
+                        <i class="fa-solid fa-circle-user" style="color: #fff; margin-bottom: 4px;"></i>
+                        <span id="user-name">Đăng nhập</span>
+                    </a>
+
+                    <div id="log-out" class="p-0 m-0 d-flex align-content-center">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="title-card">
+            <div class="title">
+                <img src="../asset/logo/logo_dark.png">
+                <h4>Một sản phẩm của Team JSA-MindX Hạ Long</h4>
+            </div>
+            <div class="subtitle">
+            </div>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+
+        <div class="b1">
+            <h2>Về TS Store</h2>
+            <p>Bạn đang tìm kiếm những sản phẩm công nghệ mới nhất, chất lượng cao và giá cả hợp lý? Hãy đến với cửa
+                hàng TS Store của chúng tôi, nơi bạn có thể tìm thấy mọi thứ từ máy tính, điện thoại, máy ảnh, tai
+                nghe, đến phụ kiện và linh kiện. Chúng tôi luôn cập nhật những mẫu mới nhất từ các thương hiệu nổi tiếng
+                như Apple, Samsung, Sony, Asus, Dell, và nhiều hơn nữa. Bên cạnh đó, chúng tôi cũng có đội ngũ nhân viên
+                tư vấn nhiệt tình, chuyên nghiệp và giàu kinh nghiệm, sẵn sàng giải đáp mọi thắc mắc và đáp ứng nhu cầu
+                của bạn. Hãy đến với TS Store hôm nay để trải nghiệm sự khác biệt và nhận những ưu đãi hấp dẫn!</p>
+            <img src="../gear/chinhsachbaohanh-r2.png">
+        </div>
+
+        <div class="b1 mt-5">
+            <h2>Những thông tin khác</h2>
+            <p>TS Store là một trang web bán hàng công nghệ online dạng offline (template) được tạo ra nhằm mục đích
+                chuẩn bị cho bài thuyết trình cuối khóa JS-Advanced của MindX</p>
+            <p>Có thể có khá nhiều tính năng không hoạt động vì nhân lực trình độ code khá là gà nên mong mọi người thông cảm:))</p>
+        </div>
+
+        <div class="b1 mt-5">
+            <h2>Developer</h2>
+            <div class="row card-contain">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <img src="../asset/avt/avt4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Lã Phúc Thanh</h5>
+                          <p class="card-text">
+                            Thiết kế trang chủ <br>
+                            Style chính sách <br>
+                            Trang giới thiệu <br>
+                            Ghép sản phẩm
+                          </p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <img src="../asset/avt/avt1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Nguyễn Như Hải Đăng</h5>
+                          <p class="card-text">
+                            Trang quản lý sản phẩm <br>
+                            Đăng nhập, đăng ký <br>
+                          </p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <img src="../asset/avt/avt2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Nguyễn Bá</h5>
+                          <p class="card-text">
+                            Nội dung chính sách <br>
+                            Hướng dẫn trả góp
+                          </p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <img src="../asset/avt/avt3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Đoàn Thành Đồng</h5>
+                          <p class="card-text">
+                            Database (Cơ sở dữ liệu) <br>
+                            Tìm kiếm sản phẩm <br>
+                          </p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <!-- Footer -->
+  <div class="container-fluid mt-5 p-0">
+
+    <footer class="text-white text-center text-lg-start" style="background-color: #332C54;">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row mt-4">
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Về TS Store</h5>
+
+            <p style="text-align: justify;">
+              TS Store là hệ thống siêu thị điện máy. Hệ thống này khai trương ngày tháng 11 năm
+              2019. Theo thống kê của Vietnam Report, tính đến tháng 11/2020, TS Store nằm top 2 nhà bán lẻ được người
+              tiêu dùng quan tâm nhất và top 4 trên bảng xếp hạng 10 nhà bán lẻ uy tín năm 2023
+            </p>
+
+            <div class="mt-4">
+              <!-- Facebook -->
+              <a type="button" class="btn btn-floating btn-lg"><i class="fab fa-facebook-f"
+                  style="color: white; border-radius: 100px !important;"></i></a>
+              <!-- Dribbble -->
+              <a type="button" class="btn btn-floating btn-lg"><i class="fab fa-instagram"
+                  style="color: white; border-radius: 100px !important"></i></a>
+              <!-- Google + -->
+              <a type="button" class="btn btn-floating btn-lg"><i class="fab fa-google-plus-g"
+                  style="color: white; border-radius: 100px !important;"></i></a>
+              <!-- Linkedin -->
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Liên hệ</h5>
+
+            <div class="form-outline form-white mb-4">
+              <div class="form-notch">
+                <div class="form-notch-leading" style="width: 9px;"></div>
+                <div class="form-notch-middle" style="width: 48.8px;"></div>
+                <div class="form-notch-trailing"></div>
+              </div>
+            </div>
+
+            <ul class="fa-ul" style="margin-left: 1.65em;">
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Hạ Long, Quảng Ninh</span>
+              </li>
+              <li class="mb-3">
+                <a href="mailto:nathanelytra2k7@gmail.com" class="text-white text-decoration-none"><span
+                    class="fa-li"><i class="fas fa-envelope"></i></span><span
+                    class="ms-2">nathanelytra2k7@gmail.com</span>
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="tel:+84987682536" class="text-white text-decoration-none"><span class="fa-li"><i
+                      class="fas fa-phone"></i></span><span class="ms-2">+84 12 345 6789</span></a>
+              </li>
+            </ul>
+            <h5 class="text-uppercase mb-4">Nhận tin khuyến mãi</h5>
+
+            <div class="input-group w-100">
+              <input type="text" class="form-control" placeholder="Nhập email của bạn" aria-label="Recipient's username"
+                aria-describedby="button-addon2">
+              <button class="btn btn-outline-secondary btn-outline-light" type="button" id="button-addon2">Đăng
+                ký</button>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Chính sách</h5>
+            <ul class="fa-ul" style="margin-left: 1.65em; list-style-type: disc;">
+              <li class="mb-3">
+                <a href="../gear/chinh-sach-bao-hanh.html" class="text-white text-decoration-none">
+                  <span>Chính sách bảo hành</span>
+              </li>
+              <li class="mb-3">
+                <a href="../gear/huong-dan-tra-gop.html" class="text-white text-decoration-none">
+                  <span>Hướng dẫn trả góp</span>
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#" class="text-white text-decoration-none">
+                  <span>Hướng dẫn thanh toán</span>
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#" class="text-white text-decoration-none">
+                  <span>Chính sách bảo mật</span>
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#" class="text-white text-decoration-none">
+                  <span>Chính sách giao hàng</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); font-style: italic;">
+        © 2023 Copyright:
+        <a class="text-white text-decoration-none">TS Store Team</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+  </div>
+
+
+    <script>
+        var user_info = localStorage.getItem("username")
+        if (typeof (user_info) == "string") {
+            document.getElementById("user-name").innerHTML = user_info
+            document.getElementById("user-name_mobile").innerHTML = user_info
+
+
+            let log_out = document.getElementById("log-out")
+            let log_out_button = document.createElement("button")
+            log_out_button.setAttribute("style", "background-color: transparent; color: white; border: none; scale: 80%; margin-bottom: 4px;")
+            log_out_button.setAttribute("onclick", "logout()")
+            log_out_button.classList.add("pc")
+            log_out.appendChild(log_out_button)
+
+            let log_out_icon = document.createElement("i")
+            log_out_icon.classList.add("fa-solid")
+            log_out_icon.classList.add("fa-arrow-right-from-bracket")
+            log_out_icon.classList.add("p-0")
+            log_out_icon.classList.add("m-0")
+            log_out_button.appendChild(log_out_icon)
+
+            let log_out_mobile = document.getElementById("logout_mobile")
+            let log_out_button_mobile = document.createElement("button")
+            log_out_button_mobile.setAttribute("style", "background-color: transparent; color: white; border: none; scale: 80%; margin-bottom: 4px;")
+            log_out_button_mobile.setAttribute("onclick", "logout()")
+            log_out_mobile.appendChild(log_out_button_mobile)
+
+            let log_out_icon_mobile = document.createElement("i")
+            log_out_icon_mobile.classList.add("fa-solid")
+            log_out_icon_mobile.classList.add("fa-arrow-right-from-bracket")
+            log_out_button_mobile.appendChild(log_out_icon_mobile)
+        }
+
+        function logout() {
+            localStorage.removeItem("username")
+            window.location.href = "../page/about.html"
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

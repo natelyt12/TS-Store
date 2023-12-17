@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập hệ thống Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style-with-prefix.css">
+    <link rel="shortcut icon" href="./images/z4917245692228_85da23cfb8b19aa197f13ff8e87c8d74.jpg" type="image/x-icon">
+    <style>
+        .srouce{
+            text-align: center;
+            color: #ffffff;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container" onsubmit="sign_in()">
+        <div class="form-container">
+
+            <div class="srouce"><a title="quay về trang chủ" href="#"><img style="width: 40%;" src="./z4899108364230_3b99627d74160aa640b072c5209488ce-removebg-preview.png" alt=""></a></div>
+
+            <div class="form-body">
+                <h2 class="title" style="padding-bottom: 30px;"><b>ĐĂNG NHẬP VÀO HỆ THỐNG ADMIN LITE SYSTEM V2.0.1</b></h2>
+                <!-- <div class="social-login">
+                    <ul>
+                        <li class="google"><a href="#">Google</a></li>
+                        <li class="fb"><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+                SOCIAL LOGIN
+
+                <div class="_or">hoặc</div> -->
+
+                <form action="" class="the-form">
+
+                    <label for="ID">ID</label>
+                    <input type="ID" name="ID" id="idhello" placeholder="nhập ID của bạn">
+
+                    <label for="password">Mật khẩu</label>
+                    <input type="password" name="password" id="password" placeholder="nhập mật khẩu">
+
+                    <input type="submit" value="Đăng nhập">
+
+                </form>
+
+            </div><!-- FORM BODY-->
+
+            <!-- <div class="form-footer">
+                <div>
+                    <span>bạn chưa có tài khoản?</span> <a href="./signup.html">đăng kí</a>
+                </div> -->
+            </div><!-- FORM FOOTER -->
+
+        </div><!-- FORM CONTAINER -->
+    </div>
+<!-- <script src="./sign.js"></script> -->
+<script src="./main.js"></script>
+
+<script>
+    setInterval(() => {
+        flashTitle("Ts store mindx" , "đăng nhập hệ thống admin")
+    },1000);
+    
+    function flashTitle(pageTitle, newTitle) {
+        if (document.title == pageTitle) {
+            document.title = newTitle;
+        } else {
+            document.title = pageTitle;
+        }
+    }    
+</script>
+</body>
+</html>

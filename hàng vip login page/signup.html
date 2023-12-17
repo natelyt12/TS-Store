@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng kí</title>
+    <link rel="web icon" href="../asset/logo/logo-no-title-light.png">
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style-with-prefix.css">
+    <style>
+        .srouce{
+            text-align: center;
+            color: #ffffff;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body onload="myFunction()">
+
+    <div class="main-container" onsubmit="sign_up()">
+        <div class="form-container">
+
+            <div class="srouce"><a title="quay về trang chủ" href="../index.html"><img style="width: 40%;" src="./z4899108364230_3b99627d74160aa640b072c5209488ce-removebg-preview.png" alt=""></a></div>
+
+            <div class="form-body">
+                <h2 class="title">Bắt đầu với</h2>
+                <div class="social-login">
+                    <ul>
+                        <li class="google"><a href="#">Google</a></li>
+                        <li class="fb"><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+                <!-- SOCIAL LOGIN -->
+
+                <div class="_or">- Hoặc một tài khoản TS -</div>
+
+                <form action="" class="the-form">
+
+                    <label for="username">Tên người dùng</label>
+                    <input type="text" name="username" id="username" placeholder="Nhập tên người dùng">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email của bạn">
+
+                    <label for="password">Mật khẩu</label>
+                    <input type="password" name="password" id="password" placeholder="Nhập mật khẩu">
+
+                    <input type="submit" value="Đăng kí"> 
+
+                </form>
+
+            </div>
+
+            <div class="form-footer">
+                <div>
+                    <a href="./index.html">Quay lại đăng nhập</a>
+                </div>
+            </div><!-- FORM FOOTER -->
+
+        </div><!-- FORM CONTAINER -->
+    </div>
+<script src="./sign.js"></script>
+<script>
+    setInterval(() => {
+        flashTitle("TS Store" , "Đăng kí")
+    },1000);
+    
+    function flashTitle(pageTitle, newTitle) {
+        if (document.title == pageTitle) {
+            document.title = newTitle;
+        } else {
+            document.title = pageTitle;
+        }
+    }    
+</script>
+</body>
+</html>

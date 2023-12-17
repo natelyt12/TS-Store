@@ -1,0 +1,104 @@
+body {
+    padding: 0;
+    margin: 0;
+    transition: 0.6s;
+}
+
+/* Container */
+.container {
+    margin-top: 120px;
+}
+
+.title-card {
+    padding: 110px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    margin: 0px 0px 30px 0;
+    color: #332C54;
+}
+
+.subtitle {
+    width: 80%;
+    text-align: center;
+}
+
+.fa-chevron-down {
+    padding-top: 50px;
+    scale: 150%;
+    color: #332C54;
+}
+
+#margin li {
+    margin: 15px 0;
+}
+
+/* Bước 1 */
+.b1 i {
+    color: #332C54;
+}
+
+/* Bước 2 */
+.b2 p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.b2 {
+    padding-bottom: 150px;
+}
+
+.ymf ul {
+    list-style-type: none;
+
+}
+
+
+.card-title {
+    text-align: center;
+    color: #332C54 !important;
+}
+
+.card {
+    height: 100% !important;
+}
+
+.margin-top{
+    margin-top: 30px !important;
+}
+
+#hdsaigon{
+    width: 100%;
+}
+
+
+
+
+@media only screen and (min-width: 980px) {
+    .container {
+        margin-top: 100px;
+    }
+
+    .title-card {
+        padding: 160px 0px;
+    }
+
+    #justify p {
+        text-align: center;
+    }
+
+    .margin{
+        padding: 0px 100px;
+    }
+
+    #hdsaigon{
+        width: 100%;
+        scale: 70%;
+    }
+}
